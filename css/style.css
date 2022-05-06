@@ -3339,9 +3339,23 @@ img {
   .header__menu-top-form{
     flex-direction: column-reverse;
     align-items: flex-end;
-    top: 50%;
+    padding-bottom: 0;
+    top: 60%;
+    bottom: 0;
     right: 0;
     height: 120px;
+  }
+
+  .header__menu-search-btn-svg {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 19px;
+    height: 19px;
+  }
+
+  .header__menu-search-close {
+    width: 19px;
+    height: 19px;
   }
 
   .header__menu-search-input {
