@@ -154,7 +154,7 @@ img {
   background-color: var(--color-black-dark);
 }
 
-.header__menu-list-item-link-image {
+.header__image {
   margin-right: 172px;
 }
   
@@ -2572,7 +2572,7 @@ img {
     padding-right: 44px;
   }
 
-  .header__menu-list-item-image-item {
+  .header__image-item {
     width: 187.6px;
   }
 
@@ -2599,7 +2599,7 @@ img {
     flex-direction: row;
   }
 
-  .header__menu-list-item-link-image {
+  .header__image {
     margin-right: 0;
     order: 1;
   }
@@ -3043,7 +3043,7 @@ img {
     height: 18px;
   }
 
-  .header__menu-list-item-image-item {
+  .header__image-item {
     width: 187.6px;
     height: 42px;
   }
@@ -3310,7 +3310,7 @@ img {
     height: 18px;
 }
 
-  .header__menu-list-item-image-item {
+  .header__image-item {
     width: 96.8px;
     height: 21.67px;
   }
