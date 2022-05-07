@@ -361,13 +361,13 @@ window.addEventListener('DOMContentLoaded', function() {
         const path = event.currentTarget.dataset.path;
 
         document.querySelectorAll('.section-catalog__list-item').forEach(function(btn){
-    btn.classList.remove('section-catalog__item--active')});
-    event.currentTarget.classList.add('section-catalog__item--active');
+    btn.classList.remove('section-catalog__list-item_active')});
+    event.currentTarget.classList.add('section-catalog__list-item_active');
 
         document.querySelectorAll('.section-catalog__content-bottom-left').forEach(function(tabsBtn){
-    tabsBtn.classList.remove('section-catalog__content-bottom--active')});
+    tabsBtn.classList.remove('section-catalog__content-bottom-left_active')});
 
-    document.querySelector(`[data-target="${path}"]`).classList.add('section-catalog__content-bottom--active');
+    document.querySelector(`[data-target="${path}"]`).classList.add('section-catalog__content-bottom-left_active');
     })
     })
   })
