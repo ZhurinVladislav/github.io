@@ -21,7 +21,7 @@
   <script src="js/swiper.js" defer></script>
   <script src="js/index.js" defer></script>
 </head>
-<body>
+<body class="test">
   <div class="top-wrapper">
     <header class="top-wrapper__header header">
       <div class="header__menu-top">
@@ -30,50 +30,52 @@
             <img class="header__image-item" src="./img/header-logo.svg" alt="Логотип художественной галерее Blanchard">
           </a>
           <div class="header__menu-top-nav">
-            <nav class="header__menu-top-wrap">
-              <ul class="list-reset header__menu-top-list">
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-about">
-                    О нас
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-gallery">
-                    Галерея
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-catalog">
-                    Каталог
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-events">
-                    События
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-projects">
-                    Проекты
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-list-item-link" href="#section-feedback">
-                    Контакты
-                  </a>
-                </li>
-                <li class="header__menu-button-login">
-                  <button aria-label="Авторизация" class="btn-reset header__menu-burger-button-item">
-                    <span>
-                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                      </svg>
-                    </span>
-                    Войти
-                  </button>
-                </li>
-              </ul>
-            </nav>
+            <div class="header__menu-top-wrap">
+              <nav class="header__menu">
+                <ul class="list-reset header__menu-top-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-about">
+                      О нас
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-gallery">
+                      Галерея
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-catalog">
+                      Каталог
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-events">
+                      События
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-projects">
+                      Проекты
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-list-item-link" href="#section-feedback">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__menu-button-login">
+                <button aria-label="Авторизация" class="btn-reset header__menu-burger-button-item">
+                  <span>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                    </svg>
+                  </span>
+                  Войти
+                </button>
+              </div>
+            </div>
             <button aria-label="Открытие меню" class="btn-reset header__menu-durger">
               <span></span>
             </button>
@@ -113,7 +115,7 @@
       </div>
       <div class="header__menu-bottom">
         <div class="container header__container-bottom">
-          <ul class="list-reset header__menu-list">
+          <ul class="list-reset header__menu-list">v
             <li class="header__menu-list-item">
               <button aria-label="Реализм" class="btn-reset header__menu-list-item-btn">
                 <span class="header__item">
@@ -304,7 +306,7 @@
                 </div>
               </div>
             </li>
-            <li id="search" class="header__search">
+            <!-- <li id="search" class="header__search">
               <div class="header__search-elements">
                 <div class="header__search-item-image">
                   <svg aria-label="Поиск по сайту" class="header__search-item-image-svg" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -316,24 +318,38 @@
                   <input class="header__item-form" placeholder="Поиск по сайту" type="search">
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
+          <div id="search" class="header__search">
+            <form class="header__search-item js-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <button aria-label="Поиск по сайту" class="btn-reset header__menu-search-btn" type="submit">
+                <svg class="header__search-item-image-svg" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                </svg>
+              </button>
+              <input class="header__item-form" placeholder="Поиск по сайту"  type="text" name="search">
+            </form>
+          </div>
         </div>
       </div>
     </header>
-    <article class="top-wrapper__hero section-hero">
+    <div class="top-wrapper__hero section-hero">
       <div class="container section-hero__container">
-        <h1 class="title-reset section-hero__heading">
-          Прикоснитесь к&nbsp;прекрасному
+        <h1 class="title-reset section-hero__heading-official">
+          Blanchard - художественная галерея
         </h1>
+        <h2 class="title-reset section-hero__heading">
+          Прикоснитесь к&nbsp;прекрасному
+        </h2>
         <p class="text-reset section-hero__text">
           Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-          </p>
-        <a tabindex="0" aria-label="Подписаться на рассылку" href="#" class="section-hero__button">
+        </p>
+        <a aria-label="Подписаться на рассылку" href="#" class="section-hero__button">
           Подписаться на&nbsp;рассылку
         </a>
       </div>
-    </article>
+    </div>
     <div class="slider">
       <div class="js-hero-swiper slider__container slider__wrapper">
         <div class="swiper-wrapper">
@@ -521,122 +537,122 @@
                 <div class="section-catalog__accordion-content ac-panel ac">
                     <ul class="list-reset section-catalog__content-accordion-list">
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Бенедетто ди&nbsp;Биндо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Бергоньоне, Амброджо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Биссоло, Франческо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Больтраффио, Джованни
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Бонсиньори, Франческо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Боттичини, Рафаэлло
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Брамантино
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Бреа, Людовико
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Бьяджо д&rsquo;Антонио Туччи
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Веккьетта
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Андреа Верроккьо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" data-path="one" class="section-catalog__list-item section-catalog__list-item_active">
+                        <a data-path="one" class="section-catalog__list-item section-catalog__list-item_active">
                           Доменико Гирландайо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Беноццо Гоццоли
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1"  class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Граначчи, Франческо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Грегорио ди&nbsp;Чекко
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Джованни да&nbsp;Удине
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Джованни ди&nbsp;Паоло
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Джорджоне
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Парентино, Бернардо
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Пезеллино
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Пьетро Перуджино
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Пьетро Перуджино
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Пизанелло
                         </a>
                       </li>
                       <li>
-                        <a tabindex="1" class="section-catalog__list-item" data-path="two">
+                        <a class="section-catalog__list-item" data-path="two">
                           Пинтуриккьо
                         </a>
                       </li>
