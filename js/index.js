@@ -156,13 +156,13 @@ window.addEventListener('DOMContentLoaded', function() {
       768: {
         slidesPerGroup: 2,
         slidesPerView: 2,
-        spaceBetween: 37,
+        // spaceBetween: 37,
       },
 
       1000: {
         slidesPerGroup: 3,
         slidesPerView: 2,
-        spaceBetween: 34,
+        // spaceBetween: 34,
       },
 
       1415: {
