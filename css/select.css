@@ -86,8 +86,8 @@
 .choices[data-type*=select-one]::after{
   content: url(../img/arrow-down.svg);
   position:absolute;
-  right:11.5px;
-  top:30%;
+  right: 13px;
+  top: 28%;
   margin-bottom: 10px;
   pointer-events:none;
   cursor: pointer;
@@ -196,7 +196,7 @@
 
 .choices__list--single {
   display: inline-block;
-  padding: 4px 16px 4px 4px;
+  padding: 3px 50px 3px 4px;
   width: 100%;
 } 
 
