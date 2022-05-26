@@ -147,7 +147,7 @@
   opacity: 1;
 }
 
-.choices__inner{
+.choices__inner {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -160,6 +160,15 @@
   font-size: 16px;
   line-height: 32px;
   color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+.choices__inner:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choices__inner:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* .is-focused
