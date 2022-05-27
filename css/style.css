@@ -135,7 +135,7 @@ img {
   
 .header {
   position: relative;
-  z-index: 11;
+  z-index: 10;
 }
 
 .header__container-top {
@@ -149,7 +149,6 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 29px;
-  padding-right: 50px;
   padding-bottom: 28px;
 }
   
@@ -183,7 +182,9 @@ img {
 }
 
 .header__menu-list-item-link {
-  padding: 8px;
+  position: relative;
+  outline: none;
+  z-index: 12;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -193,9 +194,29 @@ img {
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.header__menu-list-item-link:focus:not(:active) {
+.header__menu-list-item-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 6px);
+  height: calc(100% + 8px);
+  -webkit-transform: translate(-50%, -50%) scaleX(0);
+  -ms-transform: translate(-50%, -50%) scaleX(0);
+  transform: translate(-50%, -50%) scaleX(0);
   background-color: var(--color-purple-dark);
-  color: var(--color-white);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header__menu-list-item-link:focus:not(:active)::before {
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+  -ms-transform: translate(-50%, -50%) scaleX(1);
+  transform: translate(-50%, -50%) scaleX(1);
   outline: none;
 }
 
@@ -212,6 +233,8 @@ img {
 }
 
 .header__menu-top-login {
+  position: relative;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,11 +246,37 @@ img {
   align-items: center;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding: 7px;
   -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
   -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
+
+.header__menu-top-login::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 6px);
+  height: calc(100% + 8px);
+  -webkit-transform: translate(-50%, -50%) scaleX(0);
+  -ms-transform: translate(-50%, -50%) scaleX(0);
+  transform: translate(-50%, -50%) scaleX(0);
+  background-color: var(--color-purple-dark);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+
+.header__menu-top-login:focus:not(:active)::before {
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+  -ms-transform: translate(-50%, -50%) scaleX(1);
+  transform: translate(-50%, -50%) scaleX(1);
+}
+
 
 .header__menu-top-login path {
   -webkit-transition: fill .3s ease-in-out;
@@ -241,9 +290,6 @@ img {
   transition: color .3s ease-in-out;
 }
 
-.header__menu-top-login:focus:not(:active) {
-  background-color: var(--color-purple-dark);
-}
 
 .header__menu-top-login:hover path {
   fill: var(--color-purple-medium);
@@ -608,6 +654,8 @@ img {
 }
 
 .header__menu-list-item-btn {
+  position: relative;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,10 +671,28 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 6px;
   -webkit-transition: background-color .3s ease-in-out;
   -o-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+}
+
+.header__menu-list-item-btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 6px);
+  height: calc(100% + 8px);
+  -webkit-transform: translate(-50%, -50%) scaleX(0);
+  -ms-transform: translate(-50%, -50%) scaleX(0);
+  transform: translate(-50%, -50%) scaleX(0);
+  background-color: var(--color-purple-dark);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .header__menu-list-item-btn .header__item{
@@ -635,8 +701,10 @@ img {
   transition: color .3s ease-in-out;
 }
 
-.header__menu-list-item-btn:focus:not(:active) {
-  background-color: var(--color-purple-dark);
+.header__menu-list-item-btn:focus:not(:active)::before {
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+  -ms-transform: translate(-50%, -50%) scaleX(1);
+  transform: translate(-50%, -50%) scaleX(1);
 }
 
 .header__menu-list-item-btn:hover .header__item{
@@ -645,10 +713,6 @@ img {
 
 .header__menu-list-item-btn:active .header__item{
   color: var(--color-purple-dark);
-}
-
-.header__item {
-  margin-right: 3px;
 }
 
 .header__item-image {
@@ -712,6 +776,7 @@ img {
 
 .header__item {
   position: relative;
+  margin-right: 3px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -1880,6 +1945,8 @@ img {
 }
 
 .section-catalog__list-item {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1891,16 +1958,37 @@ img {
   font-size: 16px;
   line-height: 32px;
   color: var(--color-black);
-  background-color: transparent;
   border-bottom: 1px solid transparent;
   -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-bottom .3s ease-in-out;
   -o-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-bottom .3s ease-in-out;
   transition: background-color .3s ease-in-out, color .3s ease-in-out, border-bottom .3s ease-in-out;
 }
 
-.section-catalog__list-item:focus:not(:active) {
-  background-color: var(--color-purple);
+.section-catalog__list-item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 6px);
+  height: calc(100% + 8px);
+  -webkit-transform: translate(-50%, -50%) scaleX(0);
+  -ms-transform: translate(-50%, -50%) scaleX(0);
+  transform: translate(-50%, -50%) scaleX(0);
+  background-color: var(--color-purple-dark);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.section-catalog__list-item:focus:not(:active)::before {
   color: var(--color-white);
+  outline: none;
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+  -ms-transform: translate(-50%, -50%) scaleX(1);
+  transform: translate(-50%, -50%) scaleX(1);
 }
 
 .section-catalog__list-item:hover {
