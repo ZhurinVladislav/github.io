@@ -759,6 +759,7 @@ img {
   position: absolute;
   top: 49px;
   left: 9px;
+  z-index: 100;
   padding: 40px 20px 20px 40px;
   width: 300px;
   visibility: hidden;
@@ -1094,7 +1095,7 @@ img {
 /* Hero */
 .section-hero {
   position: relative;
-  z-index: 10;
+  z-index: 9;
 }
 
 .section-hero__container {
@@ -1261,7 +1262,7 @@ img {
 
  /* About */
 .section-about {
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 
 .section-about__content {
@@ -3209,7 +3210,7 @@ img {
   }
   
   .top-wrapper {
-    min-height: 768px;
+    min-height: 669px;
   }
 
   .section-hero__container {
@@ -3224,6 +3225,11 @@ img {
   .section-hero__text {
     margin-bottom: 133px;
     max-width: 80%;
+  }
+
+  .slider {
+    top: -39px;
+    height: 105.7%;
   }
 
   .section-about__content {
@@ -3450,7 +3456,7 @@ img {
   .header__menu-durger::before,
   .header__menu-durger::after {
     position: absolute;
-    top: 45%;
+    top: 56%;
     left: 0;
     width: 100%;
     height: 3.65px;
@@ -3472,7 +3478,7 @@ img {
   }
 
   .header__menu-durger span {
-    top: calc(45% - 1px);
+    top: calc(55% - 1px);
     width: 28.2px;
     -webkit-transition: opacity .5s ease, -webkit-transform .2s ease;
     transition: opacity .5s ease, -webkit-transform .2s ease;
@@ -3928,7 +3934,7 @@ img {
 
 @media (max-width: 768px) {
   .top-wrapper {
-    min-height: 355px;
+    min-height: 310.9px;
   }
 
   .section-catalog__title {
@@ -3957,9 +3963,9 @@ img {
   }
 
   .header__menu-durger::before {
-    -webkit-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   .header__menu-durger {
@@ -4058,7 +4064,7 @@ img {
 
   .header__container-top {
     padding-top: 13.5px;
-    padding-bottom: 13.5px;
+    padding-bottom: 14.5px;
   }
 
   .header__menu-top-search {
@@ -4132,6 +4138,11 @@ img {
     min-height: 40px;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .slider {
+    top: -39.9px;
+    height: 112.61%;
   }
 
   .section-about {
