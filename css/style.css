@@ -2095,7 +2095,7 @@ img {
 .section-events__swiper-navigation {
   position: absolute;
   top: 46.3%;
-  right: -25px;
+  right: -23px;
   bottom: 0;
   left: -20px;
   z-index: 2;
@@ -2124,6 +2124,7 @@ img {
 
 .section-events__container {
   position: relative;
+  padding: 0 48px;
 }
 
 .section-events__swiper-btn {
@@ -2192,7 +2193,7 @@ img {
 }
 
 .section-events__slides-container {
-  padding-right: 5px;
+  padding-right: 10px;
   overflow: hidden;
 }
 
