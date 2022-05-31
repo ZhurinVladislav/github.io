@@ -22,306 +22,304 @@
   <script src="js/index.js" defer></script>
 </head>
 <body>
-  <div>
-    <header class="header">
-      <div class="header__menu-top">
-        <div class="container header__container-top">
-          <a class="header__image">
-            <img class="header__image-item" src="./img/header-logo.svg" alt="Логотип художественной галерее Blanchard">
-          </a>
-          <div class="header__menu-top-nav">
-            <div class="header__menu-top-wrap">
-              <nav class="header__menu">
-                <ul class="list-reset header__menu-top-list">
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-about">
-                      О нас
-                    </a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-gallery">
-                      Галерея
-                    </a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-catalog">
-                      Каталог
-                    </a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-events">
-                      События
-                    </a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-projects">
-                      Проекты
-                    </a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-list-item-link focus-reset" href="#section-feedback">
-                      Контакты
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="header__menu-button-login">
-                <button aria-label="Авторизация" class="btn-reset header__menu-burger-button-item">
-                  <span>
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                    </svg>
-                  </span>
-                  Войти
-                </button>
-              </div>
-            </div>
-            <button aria-label="Открытие меню" class="btn-reset header__menu-durger">
-              <span></span>
-            </button>
-          </div>
-          <button aria-label="Войти" class="btn-reset header__menu-top-login focus-reset" type="button">
-            <svg class="header__menu-login-image" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-            </svg>
-            <span class="header__menu-login-description">
-              Войти
-            </span>
-          </button>
-          <button class="btn-reset header__menu-top-search js-open-search" type="button">
-            <svg class="header__menu-top-search-item" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
-            </svg>
-          </button>
-          <form class="header__menu-top-form js-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-              <div class="header__menu-top-form-wrap">
-                <button aria-label="Поиск по сайту" class="btn-reset header__menu-search-btn">
-                  <svg class="header__menu-search-btn-svg" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+  <header class="header">
+    <div class="header__menu-top">
+      <div class="container header__container-top">
+        <a class="header__image">
+          <img class="header__image-item" src="./img/header-logo.svg" alt="Логотип художественной галерее Blanchard">
+        </a>
+        <div class="header__menu-top-nav">
+          <div class="header__menu-top-wrap">
+            <nav class="header__menu">
+              <ul class="list-reset header__menu-top-list">
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-about">
+                    О нас
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-gallery">
+                    Галерея
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-catalog">
+                    Каталог
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-events">
+                    События
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-projects">
+                    Проекты
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-list-item-link focus-reset" href="#section-feedback">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__menu-button-login">
+              <button aria-label="Авторизация" class="btn-reset header__menu-burger-button-item">
+                <span>
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                   </svg>
-                </button>
-                <input class="header__menu-search-input" type="text" name="search">
-              </div>
-            <button aria-label="Закрыть поиск" class="btn-reset header__menu-search-close-btn js-close" type="button">
-              <svg class="header__menu-search-close" width="23" height="23" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white"/>
-                <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
-              </svg>
-            </button>
-          </form>
+                </span>
+                Войти
+              </button>
+            </div>
+          </div>
+          <button aria-label="Открытие меню" class="btn-reset header__menu-durger">
+            <span></span>
+          </button>
         </div>
-      </div>
-      <div class="header__menu-bottom">
-        <div class="container header__container-bottom">
-          <ul class="list-reset header__menu-list">
-            <li class="header__menu-list-item">
-              <button aria-label="Реализм" class="btn-reset header__menu-list-item-btn focus-reset">
-                <span class="header__item">
-                  Реализм
-                </span>
-                <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white"/>
-                </svg>
-              </button>
-              <div class="header__scroll">
-                <div class="header__scroll-simplebar">
-                  <ul class="list-reset header__scroll-list">
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-one">
-                      <span class="header__scroll-item">
-                        Тинторетто
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-two">
-                      <span class="header__scroll-item">
-                        Фридрих
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-three">
-                      <span class="header__scroll-item">
-                        Леонардо
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Верроккьо
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Верроккьо
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Верроккьо
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="header__menu-list-item">
-              <button aria-label="Импрессионизм" class="btn-reset header__menu-list-item-btn focus-reset">
-                <span class="header__item">
-                  Импрессионизм
-                </span>
-                <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white"/>
-                </svg>
-              </button>
-              <div class="header__scroll">
-                <div class="header__scroll-simplebar">
-                  <ul class="list-reset header__scroll-list">
-                    <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-one">
-                      <span class="header__scroll-item">
-                        Моне
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-two">
-                      <span class="header__scroll-item">
-                        Сислей
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-three">
-                      <span class="header__scroll-item">
-                        Мане
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Ренуар
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="header__menu-list-item">
-              <button aria-label="Постимпрессионизм" class="btn-reset header__menu-list-item-btn focus-reset">
-                <span class="header__item">
-                  Постимпрессионизм
-                </span>
-                <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white"/>
-                </svg>
-              </button>
-              <div class="header__scroll">
-                <div class="header__scroll-simplebar">
-                  <ul class="list-reset header__scroll-list">
-                    <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-one">
-                      <span class="header__scroll-item">
-                        Ван Гог
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-two">
-                      <span class="header__scroll-item">
-                        Гоген
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-three">
-                      <span class="header__scroll-item">
-                        Леонардо
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Сёра
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="header__menu-list-item">
-              <button aria-label="Авангард" class="btn-reset header__menu-list-item-btn focus-reset">
-                <span class="header__item">
-                  Авангард
-                </span>
-                <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white"/>
-                </svg>
-              </button>
-              <div class="header__scroll">
-                <div class="header__scroll-simplebar">
-                  <ul class="list-reset header__scroll-list">
-                    <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-one">
-                      <span class="header__scroll-item">
-                        Кандинский
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-two">
-                      <span class="header__scroll-item">
-                        Маринетти
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-three">
-                      <span class="header__scroll-item">
-                        Малевич
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Пикассо
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="header__menu-list-item">
-              <button aria-label="Футуризм" class="btn-reset header__menu-list-item-btn focus-reset">
-                <span class="header__item">
-                  Футуризм 
-                </span>
-                <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white"/>
-                </svg>
-              </button>
-              <div class="header__scroll">
-                <div class="header__scroll-simplebar">
-                  <ul class="list-reset header__scroll-list">
-                    <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-one">
-                      <span class="header__scroll-item">
-                        Карра
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-two">
-                      <span class="header__scroll-item">
-                        Прателла
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-three">
-                      <span class="header__scroll-item">
-                        Северини
-                      </span>
-                    </li>
-                    <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-four">
-                      <span class="header__scroll-item">
-                        Балла
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div id="search" class="header__search">
-            <form class="header__search-item js-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-              <button aria-label="Поиск по сайту" class="btn-reset header__menu-search-btn" type="submit">
-                <svg class="header__search-item-image-svg" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button aria-label="Войти" class="btn-reset header__menu-top-login focus-reset" type="button">
+          <svg class="header__menu-login-image" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+          </svg>
+          <span class="header__menu-login-description">
+            Войти
+          </span>
+        </button>
+        <button class="btn-reset header__menu-top-search js-open-search" type="button">
+          <svg class="header__menu-top-search-item" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+          </svg>
+        </button>
+        <form class="header__menu-top-form js-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <div class="header__menu-top-form-wrap">
+              <button aria-label="Поиск по сайту" class="btn-reset header__menu-search-btn">
+                <svg class="header__menu-search-btn-svg" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
                 </svg>
               </button>
-              <input class="header__item-form" placeholder="Поиск по сайту"  type="text" name="search">
-            </form>
-          </div>
+              <input class="header__menu-search-input" type="text" name="search">
+            </div>
+          <button aria-label="Закрыть поиск" class="btn-reset header__menu-search-close-btn js-close" type="button">
+            <svg class="header__menu-search-close" width="23" height="23" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white"/>
+              <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="header__menu-bottom">
+      <div class="container header__container-bottom">
+        <ul class="list-reset header__menu-list">
+          <li class="header__menu-list-item">
+            <button aria-label="Реализм" class="btn-reset header__menu-list-item-btn focus-reset">
+              <span class="header__item">
+                Реализм
+              </span>
+              <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header__scroll">
+              <div class="header__scroll-simplebar">
+                <ul class="list-reset header__scroll-list">
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-one">
+                    <span class="header__scroll-item">
+                      Тинторетто
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-two">
+                    <span class="header__scroll-item">
+                      Фридрих
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-three">
+                    <span class="header__scroll-item">
+                      Леонардо
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Верроккьо
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Верроккьо
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__realism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Верроккьо
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-list-item">
+            <button aria-label="Импрессионизм" class="btn-reset header__menu-list-item-btn focus-reset">
+              <span class="header__item">
+                Импрессионизм
+              </span>
+              <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header__scroll">
+              <div class="header__scroll-simplebar">
+                <ul class="list-reset header__scroll-list">
+                  <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-one">
+                    <span class="header__scroll-item">
+                      Моне
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-two">
+                    <span class="header__scroll-item">
+                      Сислей
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-three">
+                    <span class="header__scroll-item">
+                      Мане
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__impressionism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Ренуар
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-list-item">
+            <button aria-label="Постимпрессионизм" class="btn-reset header__menu-list-item-btn focus-reset">
+              <span class="header__item">
+                Постимпрессионизм
+              </span>
+              <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header__scroll">
+              <div class="header__scroll-simplebar">
+                <ul class="list-reset header__scroll-list">
+                  <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-one">
+                    <span class="header__scroll-item">
+                      Ван Гог
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-two">
+                    <span class="header__scroll-item">
+                      Гоген
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-three">
+                    <span class="header__scroll-item">
+                      Леонардо
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__postimpressionism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Сёра
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-list-item">
+            <button aria-label="Авангард" class="btn-reset header__menu-list-item-btn focus-reset">
+              <span class="header__item">
+                Авангард
+              </span>
+              <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header__scroll">
+              <div class="header__scroll-simplebar">
+                <ul class="list-reset header__scroll-list">
+                  <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-one">
+                    <span class="header__scroll-item">
+                      Кандинский
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-two">
+                    <span class="header__scroll-item">
+                      Маринетти
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-three">
+                    <span class="header__scroll-item">
+                      Малевич
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__vanguard-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Пикассо
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-list-item">
+            <button aria-label="Футуризм" class="btn-reset header__menu-list-item-btn focus-reset">
+              <span class="header__item">
+                Футуризм 
+              </span>
+              <svg class="header__item-image" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header__scroll">
+              <div class="header__scroll-simplebar">
+                <ul class="list-reset header__scroll-list">
+                  <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-one">
+                    <span class="header__scroll-item">
+                      Карра
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-two">
+                    <span class="header__scroll-item">
+                      Прателла
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-three">
+                    <span class="header__scroll-item">
+                      Северини
+                    </span>
+                  </li>
+                  <li tabindex="0" class="header__scroll-list-item header__futurism-scroll-item-four">
+                    <span class="header__scroll-item">
+                      Балла
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="search" class="header__search">
+          <form class="header__search-item js-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <button aria-label="Поиск по сайту" class="btn-reset header__menu-search-btn" type="submit">
+              <svg class="header__search-item-image-svg" width="23" height="23" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+            </button>
+            <input class="header__item-form" placeholder="Поиск по сайту"  type="text" name="search">
+          </form>
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
   
   <main>
     <div class="top-wrapper">
@@ -905,6 +903,11 @@
                     «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                   </h3>
                   <p class="text-reset section-events__card-description">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                  </p>
+                  <p class="text-reset section-events__card-description">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
                   </p>
                 </div>
