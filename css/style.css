@@ -253,7 +253,7 @@ img {
   padding-bottom: 3px;
   -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
   -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
-  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  transition: opacity .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .header__menu-top-login:focus:not(:active)::before {
@@ -275,7 +275,6 @@ img {
   transition: color .3s ease-in-out;
 }
 
-
 .header__menu-top-login:hover path {
   fill: var(--color-purple-medium);
 }
@@ -284,12 +283,28 @@ img {
   color: var(--color-purple-medium);
 }
 
+.header__menu-top-login:hover .header__menu-login-image {
+  opacity: 0;
+}
+
+.header__menu-top-login:hover .header__menu-login-image-hover {
+  opacity: 1;
+}
+
 .header__menu-top-login:active path{
   fill: var(--color-purple-dark);
 }
 
 .header__menu-top-login:active .header__menu-login-description {
   color: var(--color-purple-dark);
+}
+
+.header__menu-top-login:active .header__menu-login-image {
+  opacity: 0;
+}
+
+.header__menu-top-login:active .header__menu-login-image-hover {
+  opacity: 1;
 }
 
 .header__menu-login-description {
@@ -301,7 +316,22 @@ img {
 
 .header__menu-login-image {
   margin-right: 7px;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
+
+.header__menu-login-image-hover {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  left: -3.4px;
+  bottom: 0;
+  margin-right: 7px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+
 
 .header__menu-top-search {
   display: none;
