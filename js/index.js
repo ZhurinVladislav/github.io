@@ -489,6 +489,9 @@ window.addEventListener('DOMContentLoaded', function() {
   new Accordion(".section-catalog__accordion-container", {
     openOnInit: [0]
   });
+
+
+
   tippy('.js-tooltip-btn', {
     theme: 'test-tooltip',
     trigger: 'focus',
