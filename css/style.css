@@ -2116,7 +2116,7 @@ img {
 
 /* Events */
 .section-events {
-  padding-top: 20px;
+  padding-top: 48px;
   padding-bottom: 79px;
 }
 
@@ -3371,7 +3371,7 @@ img {
   .section-events__card-content {
     margin-bottom: 22px;
     padding-left: 35px;
-    padding-right: 15px;
+    padding-right: 30px;
   }
 
   .section-events__card-image {
