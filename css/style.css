@@ -2771,10 +2771,10 @@ img {
 }
 
 .section-feedback__contacts-address-top {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 19px;
   color: var(--color-black);
 }
 
@@ -3429,6 +3429,11 @@ img {
     padding-bottom: 38px;
   }
 
+  .section-feedback__contacts-address-top {
+    margin-bottom: 6px;
+    line-height: 29px;
+  }
+
   .ymaps-2-1-79-controls__control {
     display: none;
   }
@@ -3988,6 +3993,7 @@ img {
 
   .section-feedback__contacts-address-top {
     margin-bottom: 3px;
+    line-height: 35px;
   }
 
   .section-feedback__list-form {
