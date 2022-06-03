@@ -145,6 +145,10 @@ img {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
 
 /* Header */
 /* Top */  
@@ -2157,10 +2161,20 @@ img {
   margin-left: auto;
 }
 
+.swiper-container .swiper-slide {
+  height: auto;
+
+}
+
+.section-events__swiper-wrapper {
+  min-height: 700px;
+}
+
 .swiper-wrapper.section-events__swiper-wrapper {
+  display: flex;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
-   align-items: stretch;
+   align-items: stretch;   
 }
 
 .section-events__container {
@@ -2234,7 +2248,6 @@ img {
 }
 
 .section-events__slides-container {
-  padding-right: 10px;
   overflow: hidden;
 }
 
@@ -2364,9 +2377,9 @@ img {
   margin-top: 30px;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+/* .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7.5px);
-}
+} */
 
 .swiper-pagination-bullet-active {
   background-color: var(--color-gray-tight);
@@ -3352,26 +3365,18 @@ img {
     padding-top: 15px;
   }
 
-  .section-events__container {
-    padding-right: 39px;
-    padding-left: 48px;
-  }
-  
   .section-events__slides-container {
-    padding-right: 16px;
     overflow: hidden;
   }
     
   .section-events__slide  {
     padding-bottom: 48px;
-    height: auto;
     min-height: 632px;
   }
 
   .section-events__card-content {
-    margin-bottom: 22px;
-    padding-left: 35px;
-    padding-right: 30px;
+    padding: 0 33px;
+    min-height: 200px;
   }
 
   .section-events__card-image {
@@ -3896,7 +3901,6 @@ img {
   }
   
   .section-events__slides-container {
-    padding-right: 20px;
     overflow: hidden;
   }
 
@@ -4034,6 +4038,12 @@ img {
   }
 }
 
+@media (max-width: 655px) {
+  .section-hero__heading {
+    font-size: 64px;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     padding-left: 15px;
@@ -4164,7 +4174,7 @@ img {
   }
 
   .header__container-top {
-    padding-top: 15.5px;
+    padding-top: 13.5px;
     padding-bottom: 14.5px;
   }
 
@@ -4419,7 +4429,6 @@ img {
   }
   
   .section-events__slides-container {
-    padding-right: 12px;
     overflow: hidden;
   }
 
