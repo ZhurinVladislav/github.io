@@ -205,7 +205,6 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 
   var slider2 = new Swiper('.section-events__slides-container', {
-    autoHeight: true,
     slidesPerView: 3,
     grid: {
       rows: 1,
